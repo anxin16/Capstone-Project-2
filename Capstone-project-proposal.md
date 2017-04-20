@@ -2,7 +2,8 @@
 	A Capstone project:  
         	Tonia Chu  
 	Under the mentorship:  
- 	  	Dr. Vikas Ramachandra (Data Scientist at the Stanford Graduate School of Business, CA, United States)  
+ 	  	Dr. Vikas Ramachandra 
+		(Data Scientist at the Stanford Graduate School of Business, CA, United States)  
 	For the course:  
 	  	Data Science Career Track (Springboard) 
 
