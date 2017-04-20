@@ -22,3 +22,19 @@ Addressing socioeconomic disparities in health is a major policy goal. Yet the m
 The purpose of this project is to characterize life expectancy by income, over time, and across areas. We will use de-identified data from tax records covering the US population from 1999-2014 to characterize income-mortality gradients. We will also characterize correlates of the spatial variation and construct publicly available statistics. We will build a model to predict the life expectancy of individuals by their age, income, living area and other aspects.   
 
 The analysis try to provide information for government agencies and  health care companies to improve their services and environmental factors as well as help individuals to change their behaviors to get long life expectancy.
+
+## III. Data-Source
+The This project use datasets from the Health Inequality Project.  
+Website: https://healthinequality.org/data/  
+The datasets provide 14 formatted data tables in Excel format, along with documentation for each table. These tables contain life expectancy estimates by income and sex at various levels of geographic and temporal aggregation. I downloaded the data in Excel files. 
+
+## IV. APPROAH
+1. Data preparation  
+2. Data Wrangling  
+3. Modeling and Descriptive analysis  
+4. Exploratory Data Analysis  
+5. Data visualization  
+6. Data Story  
+
+## V. DELIVERABLES
+Code, paper, slides 
