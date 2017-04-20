@@ -26,15 +26,17 @@ The analysis try to provide information for government agencies and  health care
 ## III. Data-Source
 The This project use datasets from the Health Inequality Project.  
 Website: https://healthinequality.org/data/  
+
 The datasets provide 14 formatted data tables in Excel format, along with documentation for each table. These tables contain life expectancy estimates by income and sex at various levels of geographic and temporal aggregation. I downloaded the data in Excel files. 
 
 ## IV. APPROAH
-1. Data preparation  
-2. Data Wrangling  
-3. Modeling and Descriptive analysis  
-4. Exploratory Data Analysis  
-5. Data visualization  
-6. Data Story  
+1. Data preparation
+2. Data Wrangling
+3. Descriptive analysis
+4. Exploratory Data Analysis
+5. Data visualization
+6. Modeling and Machine learning
+7. Data Story
 
 ## V. DELIVERABLES
 Code, paper, slides 
