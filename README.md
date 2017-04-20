@@ -1,25 +1,24 @@
-# Factors affect engagement and satisfaction of employees in the Federal workforce
+# Factors associated with differences in Life Expectancy across the United States
 	A Capstone project:  
         	Tonia Chu  
 	Under the mentorship:  
- 	  	Dr. Marko Mitic (Data Scientist at Telenor, Belgrade, Serbia)  
+ 	  	Dr. Vikas Ramachandra (Data Scientist at the Stanford Graduate School of Business, CA, United States)  
 	For the course:  
-	  	Foundations of Data Science (Springboard)  
+	  	Data Science Career Track (Springboard) 
 
 ## I. Introduction
-In 2015, more than 400,000 employees participated in the Federal Employee Viewpoint Survey (FEVS). The survey includes questions about satisfaction, leadership, and work schedules. The analysis try to identify the working status and give result on in which respect and how to improve the feelings of federal employees. From the analysis of the survey, we can get answers to many interesting questions.  
+From previous research, higher incomes are associated with longer life expectancy. How can we reduce socioeconomic disparities in health outcomes? Although it is well known that there are significant differences in health and longevity between income groups, debate remains about the magnitudes and determinants of these differences.     
 
-Employee feedback on key performance metrics captured in the FEVS is singularly important for each agency to realize its mission, as well as maintain and enhance Federal workforce. The feedback enables each agency to develop effective strategies and tools for driving continuous improvement.     
+We use new data from 1.4 billion anonymous earnings and mortality records to construct more precise estimates of the relationship between income and life expectancy at the national level. We then construct new local area (county and metro area) estimates of life expectancy by income group and identify factors that are associated with higher levels of life expectancy for low-income individuals.      
 #### In this study, I want to solve following problems:  
-1. How to measure satisfaction and engagement of employees with answers of survey?  
-2. What are the relationships of satisfaction/engagement via different groups (gender, age, years of service, supervisor status, agency etc.)?   
-3. What factors affect satisfaction of employees?  
-4. What factors affect engagement of employees?  
-5. How to drive engagement of employees?   
+1. What is the shape of the income–life expectancy gradient?
+2. How are gaps in life expectancy changing over time?
+3. How do the gaps vary across local areas?
+4. What are the factors associated with the longevity gap? 
 
 ## II. Purpose
-Each year leaders in the Federal Government use the Federal Employee Viewpoint Survey (FEVS) as a management tool to drive change and increase employee engagement in the federal workforce. The use of that data continues to translate into better service for the American people.  
+Addressing socioeconomic disparities in health is a major policy goal. Yet the magnitude of socioeconomic gaps in life expectancy, how these gaps are changing over time, and their determinants are not clear. In this project, newly available data covering the US population will be used to obtain more comprehensive and precise estimates of the relationship between income and life expectancy at the national level. Local area estimates of life expectancy by income will be calculated and factors that are correlated with higher life expectancy for individuals with low incomes will be identified.  
 
-The purpose of this project is to analyze the data of FEVS and identify the working status and give results on in which respect and how to improve the feelings of federal employees, measure employees' perceptions of whether, and to what extent, conditions characterizing successful organizations are present in their agencies.   
+The purpose of this project is to characterize life expectancy by income, over time, and across areas. We will use de-identified data from tax records covering the US population from 1999-2014 to characterize income-mortality gradients. We will also characterize correlates of the spatial variation and construct publicly available statistics. We will build a model to predict the life expectancy of individuals by their age, income, living area and other aspects.   
 
-The analysis try to provide information for agency leaders and managers seek to improve their human capital management. Every agency has its own unique mission and workforce, and its own set of special human capital challenges. Guided by the analysis results, agency leaders can take steps to improve how employees engage with their jobs, organizations, and missions.
+The analysis try to provide information for government agencies and  health care companies to improve their services and environmental factors as well as help individuals to change their behaviors to get long life expectancy.
