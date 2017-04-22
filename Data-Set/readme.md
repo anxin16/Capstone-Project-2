@@ -1,4 +1,3 @@
-# Data Files
 ### This folder contains Online Data Tables for the paper:
 "The Association Between Income and Life Expectancy in the United States, 2001-2014"   
 Website: http://www.healthinequality.org  
