@@ -4,10 +4,7 @@ Website: http://www.healthinequality.org
 Email: info@healthinequality.org  
 Date: April 11, 2016  
 
-This folder contains the following worksheets:
-
-Codebook  
-Variable names and descriptions for raw Stata and Excel online tables 
+This folder contains the following files:
 
 Online Data Table 1:   
 National life expectancy estimates (pooling 2001-14) for men and women, by income percentile 
