@@ -10,3 +10,5 @@ I found useful columns and Subset Variables (Columns).Then save new tables as cs
 ### Step 3: Fill missing values in table 10 and table 12
 A column is removed if there are more than 20% missing value. A state is removed if all the values of a column are missing.  
 Then I caculate mean of each satae and fill missing values with the mean value of that state.
+
+#### Please Health-Wealth1.ipynb for code details and all the csv files are Data Wrangling results.
