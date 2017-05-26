@@ -1,4 +1,4 @@
-## Apply Inferential Statistics
+# Apply Inferential Statistics
 
 To apply inferential statistics in my capstone project, I performed the following steps:
 
