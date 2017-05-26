@@ -17,3 +17,8 @@ The null hypothesis is: Mean life expectancy of males are same as mean life expe
 I caculated the confidence interval of α = .01 and get the result that if null hypothesis is correct, we have 99% confidence that the difference of mean life expectancy between males and females is less than 0.92 . But the actural sample mean difference is 3.66, the possibility of getting this mean difference under H0 is nearly 0. So we strongly reject the null hypothesis. Mean life expectancy of females is higher that mean life expectancy of males. 
 
 ### Step 3: Research on the relationship between Life Expectancy and Household Income
+First, I made a scatter plot of Life Expectancy and Household Income as below:
+
+![scatter1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/scatter1.png)
+
+From the plot we can see the 
