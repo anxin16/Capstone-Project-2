@@ -8,7 +8,7 @@ Use pd.read_csv() to read csv files of table 1 and table 2. These tables have be
 ### Step 2: Check the difference of life expectancy between males and females
 In this step, I used null hypothesis method to check the difference of life expectancy between males and females.  
 
-[https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/boxplot.png]
+![boxplot](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/boxplot.png)
 
 From the boxplot of the life expectancy of males and feles, we can see that the mean life expectancy of males is lower than that of females. But there's overlap for boxplots of males and females. We were not sure if the observed result was true for all the population. So I setup an hypothesis test to determine.
 
