@@ -72,8 +72,10 @@ We use the dataset in table 2, which include National by-year life expectancy es
 First, we get the plot of Life Expectancy by Household Income Percentile of Men and Women in year 2001~2014:
 ![le-in-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year.png)
 
-
-
+From the plot, we can see that the life expectancy vary by year and trends are almost the same. 
+		
+Second, we choose 4 years’ data to have a close look:
+![le-in-year-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-f.png)
 
 
 
