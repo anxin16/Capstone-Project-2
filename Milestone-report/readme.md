@@ -33,4 +33,37 @@ After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv
 
 The python code of above jobs is in file Milestone-1.ipynb
 
+## III. exploration and initial findings
+Next we will do exploratory data analysis. There are 3 steps analysis to answer the first three question:
+### 1. National Statistics on Income and Life Expectancy
+In this step, we’ll answer the question: What is the shape of the income–life expectancy gradient? 
+
+We use the dataset in table 1, which include National life expectancy estimates (pooling 2001-14) for men and women, by income percentile. 
+
+First we get the plot of Life Expectancy by Household Income Percentile of Men and Women:
+![le-in](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
