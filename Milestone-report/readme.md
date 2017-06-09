@@ -41,8 +41,7 @@ In this step, we’ll answer the question: What is the shape of the income–lif
 We use the dataset in table 1, which include National life expectancy estimates (pooling 2001-14) for men and women, by income percentile. 
 
 First we get the plot of Life Expectancy by Household Income Percentile of Men and Women:
-![le-in](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in.png)
-
+![le-in](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in.png)  
 From the plot, we can see that Race-adjusted life expectancy increases as Household income percentile increases, for both men and women. At the lowest 5 percentile, life expectancy increases very fast, then it turns slow and linear. 
 
 With the same household income percentile, women’s life expectancy is higher than that of the men, while the gap between top 1% and bottom 1% is less than that of the men: 
@@ -70,14 +69,17 @@ In this step, we’ll answer the question: How are gaps in life expectancy chang
 We use the dataset in table 2, which include National by-year life expectancy estimates for men and women, by income percentile.
 
 First, we get the plot of Life Expectancy by Household Income Percentile of Men and Women in year 2001~2014:
-![le-in-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year.png)
-
+![le-in-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year.png)  
 From the plot, we can see that the life expectancy vary by year and trends are almost the same. 
 		
 Second, we choose 4 years’ data to have a close look:
-![le-in-year-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-f.png)
+![le-in-year-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-f.png)  
+Above is the women life expectancy by household income in years 2001, 2006, 2010 and 2014. With a close look, we can see that the life expectancy increases by year.
 
+![le-in-year-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-m.png)  
+From above figure, we can see that men have the same feature, but vary less than women by years.
 
+Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:
 
 
 
