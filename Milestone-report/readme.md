@@ -1,10 +1,10 @@
 # Factors associated with differences in Life Expectancy across the United States
-    A Capstone project: 
-        Tonia Chu
-	  Under the mentorship: 
-   	    Dr. Vikas Ramachandra (Data Scientist at the Stanford Graduate School of Business, CA, United States)
-	  For the course: 
- 		    Data Science Career Track (Springboard)
+    	A Capstone project: 
+        	Tonia Chu
+	Under the mentorship: 
+   	    	Dr. Vikas Ramachandra (Data Scientist at the Stanford Graduate School of Business, CA, United States)
+	For the course: 
+		Data Science Career Track (Springboard)
   
 ## I. Introduction
 Addressing socioeconomic disparities in health is a major policy goal. Yet what is the magnitude of socioeconomic gaps in life expectancy? How these gaps are changing over time? And want are their determinants? Answers to these questions are not clear. 
@@ -32,3 +32,5 @@ In data wrangling step, we first remove the unadjusted and Standard Error column
 After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv. 
 
 The python code of above jobs is in file Milestone-1.ipynb
+
+
