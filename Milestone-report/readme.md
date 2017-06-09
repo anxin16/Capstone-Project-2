@@ -1,5 +1,5 @@
 # Factors associated with differences in Life Expectancy across the United States
-    	A Capstone project: 
+	A Capstone project: 
         	Tonia Chu
 	Under the mentorship: 
    	    	Dr. Vikas Ramachandra (Data Scientist at the Stanford Graduate School of Business, CA, United States)
