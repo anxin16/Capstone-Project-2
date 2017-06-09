@@ -42,9 +42,11 @@ We use the dataset in table 1, which include National life expectancy estimates 
 
 First we get the plot of Life Expectancy by Household Income Percentile of Men and Women:
 ![le-in](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in.png)
+
 From the plot, we can see that Race-adjusted life expectancy increases as Household income percentile increases, for both men and women. At the lowest 5 percentile, life expectancy increases very fast, then it turns slow and linear. 
 
 With the same household income percentile, women’s life expectancy is higher than that of the men, while the gap between top 1% and bottom 1% is less than that of the men:  
+		
 			Women, Bottom 1%: 78.8  
 			Women, Top 1%: 88.9  
 			Women, Life expectancy gap: 10.1  
@@ -53,10 +55,12 @@ With the same household income percentile, women’s life expectancy is higher t
 			Men, Life expectancy gap: 14.6  
 
 But the gender gap decrease as income percentile increase:  
+
 			Gender gap, Bottom 1%: 6.0  
 			Gender gap, Top 1%: 1.5
 
 When use linear regression, we can get the  income–life expectancy gradient:  
+
 			Women, Slope of linear regression: 0.07  
 			Men, Slope of linear regression: 0.11  
 
