@@ -64,7 +64,13 @@ When use linear regression, we can get the  income–life expectancy gradient:
 		Women, Slope of linear regression: 0.07  
 		Men, Slope of linear regression: 0.11  
 
+### 2. Trends in Life expectancy by year 2001~2014
+In this step, we’ll answer the question: How are gaps in life expectancy changing over time? 
 
+We use the dataset in table 2, which include National by-year life expectancy estimates for men and women, by income percentile.
+
+First, we get the plot of Life Expectancy by Household Income Percentile of Men and Women in year 2001~2014:
+![le-in-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year.png)
 
 
 
