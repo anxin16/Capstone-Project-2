@@ -7,7 +7,8 @@
 		Data Science Career Track (Springboard)
   
 ## I. Introduction
-Addressing socioeconomic disparities in health is a major policy goal. Yet what is the magnitude of socioeconomic gaps in life expectancy? How these gaps are changing over time? And want are their determinants? Answers to these questions are not clear. 
+Addressing socioeconomic disparities in health is a major policy goal. Yet what is the magnitude of socioeconomic gaps in life expectancy? How these gaps are changing over time? And what are their determinants? Answers to these questions are not clear. 
+
 In this project, we use new data from 1.4 billion anonymous earnings and mortality records to construct more precise estimates of the relationship between income and life expectancy at the national level. We then construct new local area (county and metro area) estimates of life expectancy by income group and identify factors that are associated with higher levels of life expectancy for low-income individuals. 
 
 The purpose of this project is to characterize life expectancy by income, over time, and across areas. We will use de-identified data from tax records covering the US population from 2001-2014 to characterize income-mortality gradients. We will also characterize correlates of the spatial variation and construct publicly available statistics. We will build a model to predict the life expectancy of individuals by their age, income, living area and other aspects.
@@ -58,7 +59,7 @@ But the gender gap decrease as income percentile increase:
 		Gender gap, Bottom 1%: 6.0  
 		Gender gap, Top 1%: 1.5
 
-When use linear regression, we can get the  income–life expectancy gradient:
+When use linear regression, we can get the  income–life expectancy gradient:  
 
 		Women, Slope of linear regression: 0.07  
 		Men, Slope of linear regression: 0.11  
@@ -80,7 +81,8 @@ Above is the women life expectancy by household income in years 2001, 2006, 2010
 From above figure, we can see that men have the same feature, but vary less than women by years.
 
 Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:
-
+![le-year-ln-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-f.png)   
+![le-year-ln-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-m.png)    
 
 
 
