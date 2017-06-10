@@ -34,7 +34,7 @@ After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv
 
 The python code of above jobs is in file Milestone-1.ipynb
 
-## III. exploration and initial findings
+## III. Exploration and initial findings
 Next we will do exploratory data analysis. There are 3 steps analysis to answer the first three question:
 ### 1. National Statistics on Income and Life Expectancy
 In this step, we’ll answer the question: What is the shape of the income–life expectancy gradient? 
@@ -132,6 +132,8 @@ We can see that Men’s life expectancy gaps are higher than that of the women a
 And 5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:   
 ![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
 So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
+
+The python code of this part jobs is in file Milestone-2.ipynb
 
 ## IV. APPROACH
 1. Data preparation  
