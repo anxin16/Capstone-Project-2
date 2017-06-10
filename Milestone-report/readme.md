@@ -118,7 +118,7 @@ The 5 states with the lowest life expectancy gap of men are: California, New Yor
 
 Next, we’ll check CZ(Commuting Zone) level variation of life expectancy. This time we use the dataset in table 7, which include CZ-level life expectancy estimates for men and women, by income ventile.
 
-Following are CZs with the highest life expectancy gap:
+Following are CZs with the highest life expectancy gap:  
 ![gap-cz-m-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h.png) ![gap-cz-f-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h.png)   
 And Czs with the lowest life expectancy gap:  
 ![gap-cz-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l.png) ![gap-cz-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l.png)  
