@@ -124,8 +124,14 @@ And Czs with the lowest life expectancy gap:
 ![gap-cz-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l.png) ![gap-cz-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l.png)  
 
 From the results above, we choose commuting zones in California, New York, Indiana and Michigan for research. 
+![gap-cz-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-4.png)   
+We can see that Men’s life expectancy gaps are higher than that of the women and the gaps vary in different Czs.
 
-
+5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:    
+![gap-cz-m-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h-4.png) ![gap-cz-f-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h-4.png)   
+And 5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:   
+![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
+So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
 
 
 
