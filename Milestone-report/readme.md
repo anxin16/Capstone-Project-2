@@ -83,7 +83,22 @@ From above figure, we can see that men have the same feature, but vary less than
 Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:  
 ![le-year-ln-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-f.png)   
 ![le-year-ln-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-m.png)    
+We can see that for people with bottom 1 percentile household income, their life expectancy didn’t increase by year, while for people with top 1 percentile household income, their life expectancy did increased over years. 
 
+Below is the Gap of life expectancy’s trend by years:  
+![gap-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-year.png)   
+From the figure, we can see that men’s gap is much higher than that of the women, and the gap increased by year.
+
+### 3. Local Area Variation of Life expectancy gaps
+In this step, we’ll answer the question: How do the gaps vary across local areas? 
+
+We use the dataset in table 3, which include State-level life expectancy estimates for men and women, by income quartile.
+
+First, let’s have a look at the state level variation of life expectancy.  
+![le-state-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-f.png)    
+The 5 states with the highest women life expectancy of bottom quartile income are: Maine, New York, Vermont, Massachusetts, and North Dakota. While the 5 states with the lowest women life expectancy of bottom quartile income are: Nevada, Oklahoma, Indiana, Hawaii and Michigan.  
+![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png)   
+![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)   
 
 
 
