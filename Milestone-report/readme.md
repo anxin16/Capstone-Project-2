@@ -110,16 +110,18 @@ From above figures, we can see that life expectancy of different states vary a l
 
 Then, let’s check life expectancy gap by states.   
 ![gap-state](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-state.png)   
-The 5 states with the highest Men gap life expectancy are: District Of Columbia, Wyoming, Indiana, Ohio and Delaware. The 5 states with the highest women gap life expectancy are: Kansas, Iowa, Michigan, Indiana, and Oklahoma.
+The 5 states with the highest life expectancy gap of men are: District Of Columbia, Wyoming, Indiana, Ohio and Delaware. The 5 states with the highest life expectancy gap of women are: Kansas, Iowa, Michigan, Indiana, and Oklahoma.  
+![gap-s-m-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-m-h.png) ![gap-s-f-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-f-h.png)   
 
-The 5 states with the lowest Men gap life expectancy are: California, New York, New Jersey, Hawaii, and Illinois. The 5 states with the lowest women gap life expectancy are: California, Hawaii, New York, New Jersey, and Florida.
+The 5 states with the lowest life expectancy gap of men are: California, New York, New Jersey, Hawaii, and Illinois. The 5 states with the lowest life expectancy gap of women are: California, Hawaii, New York, New Jersey, and Florida.  
+![gap-s-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-m-l.png) ![gap-s-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-f-l.png)     
 
 Next, we’ll check CZ(Commuting Zone) level variation of life expectancy. This time we use the dataset in table 7, which include CZ-level life expectancy estimates for men and women, by income ventile.
 
 Following are CZs with the highest life expectancy gap:
-	
-		
-And Czs with the lowest life expectancy gap:
+![gap-cz-m-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h.png) ![gap-cz-f-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h.png)   
+And Czs with the lowest life expectancy gap:  
+![gap-cz-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l.png) ![gap-cz-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l.png)  
 
 From the results above, we choose commuting zones in California, New York, Indiana and Michigan for research. 
 
