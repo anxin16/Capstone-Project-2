@@ -80,7 +80,7 @@ Above is the women life expectancy by household income in years 2001, 2006, 2010
 ![le-in-year-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-m.png)  
 From above figure, we can see that men have the same feature, but vary less than women by years.
 
-Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:
+Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:  
 ![le-year-ln-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-f.png)   
 ![le-year-ln-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-m.png)    
 
