@@ -133,7 +133,17 @@ And 5 CZs with the highest life expectancy gap in California, New York, Indiana 
 ![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
 So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
 
+## IV. APPROACH
+1. Data preparation  
+2. Data Wrangling  
+3. Descriptive analysis  
+4. Exploratory Data Analysis  
+5. Data visualization  
+6. Modeling and Machine learning  
+7. Data Story  
 
+## V. DELIVERABLES
+Code, paper, slides
 
 
 
