@@ -97,8 +97,7 @@ We use the dataset in table 3, which include State-level life expectancy estimat
 First, let’s have a look at the state level variation of life expectancy.  
 ![le-state-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-f.png)    
 The 5 states with the highest women life expectancy of bottom quartile income are: Maine, New York, Vermont, Massachusetts, and North Dakota. While the 5 states with the lowest women life expectancy of bottom quartile income are: Nevada, Oklahoma, Indiana, Hawaii and Michigan.  
-![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png)   
-![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)   
+![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png) ![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)   
 
 
 
