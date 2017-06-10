@@ -97,13 +97,31 @@ We use the dataset in table 3, which include State-level life expectancy estimat
 First, let’s have a look at the state level variation of life expectancy.  
 ![le-state-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-f.png)    
 The 5 states with the highest women life expectancy of bottom quartile income are: Maine, New York, Vermont, Massachusetts, and North Dakota. While the 5 states with the lowest women life expectancy of bottom quartile income are: Nevada, Oklahoma, Indiana, Hawaii and Michigan.  
-![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png) ![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)   
+![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png) ![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)     
 
+![le-state-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-m.png)    
+The 5 states with the highest men life expectancy of bottom quartile income are: California, New York, Montana, Idaho, and Vermont. While the 5 states with the lowest men life expectancy of bottom quartile income are: Indiana, Oklahoma, Nevada, Alabama and Tennessee.
+![le-m-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-m-h-q1.png) ![le-m-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-m-l-q1.png)    
 
+Below are the figures of women and men life expectancy with quartile household income by states.  
+![le-state-q-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-q-f.png)    
+![le-state-q-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-q-m.png)    
+From above figures, we can see that life expectancy of different states vary a lot.
 
+Then, let’s check life expectancy gap by states.   
+![gap-state](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-state.png)   
+The 5 states with the highest Men gap life expectancy are: District Of Columbia, Wyoming, Indiana, Ohio and Delaware. The 5 states with the highest women gap life expectancy are: Kansas, Iowa, Michigan, Indiana, and Oklahoma.
 
+The 5 states with the lowest Men gap life expectancy are: California, New York, New Jersey, Hawaii, and Illinois. The 5 states with the lowest women gap life expectancy are: California, Hawaii, New York, New Jersey, and Florida.
 
+Next, we’ll check CZ(Commuting Zone) level variation of life expectancy. This time we use the dataset in table 7, which include CZ-level life expectancy estimates for men and women, by income ventile.
 
+Following are CZs with the highest life expectancy gap:
+	
+		
+And Czs with the lowest life expectancy gap:
+
+From the results above, we choose commuting zones in California, New York, Indiana and Michigan for research. 
 
 
 
