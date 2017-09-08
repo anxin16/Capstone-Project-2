@@ -26,6 +26,14 @@ The analysis try to provide information for government agencies and  health care
 
 ## IV. Exploratory Data Analysis
 
+### 1. National Statistics on Income and Life Expectancy
+
+### 2. Trends in Life expectancy by year 2001~2014
+
+### 3. Local Area Variation of Life expectancy gaps
+
+
+
 ## V. Data Modeling
 
 ## VI. Results and Discussion
