@@ -18,7 +18,7 @@ The analysis try to provide information for government agencies and  health care
 1. What is the shape of the income–life expectancy gradient?
 2. How are gaps in life expectancy changing over time?
 3. How do the gaps vary across local areas?
-4. What are the factors associated with life expectancy?
+4. What are the factors associated with differences in life expectancy?
 
 ## II. Deeper dive into the data set
 The dataset include 14 csv files of data tables. After loading these tables into python notebook, we can have a whole picture of the dataset. It provide life expectancy of people with different gender, household income, in  different states, commuting zones, county during year 2001 to 2014. It also provide informations about fraction current smokers, fraction obese, percent uninsured, 30-day hospital mortality rate, percent of Medicare enrollees, percent religious, percent black, unemployment rate, labor force participation, population density and so on in commuting zones and county level. All these informations are important for the research.
