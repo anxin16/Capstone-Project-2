@@ -50,6 +50,12 @@ In this step, we will find a model to predict average life expectancy of a count
 
 ### 2. Feature Selection Methods
 
+**1) Principal Component Analysis**
+
+**2) Regularization**
+
+**3) Random Forests**
+
 ### 3. Factors Affect Life Expectancy
 
 
