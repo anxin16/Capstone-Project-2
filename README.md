@@ -14,7 +14,7 @@ We use new data from 1.4 billion anonymous earnings and mortality records to con
 1. What is the shape of the income–life expectancy gradient?
 2. How are gaps in life expectancy changing over time?
 3. How do the gaps vary across local areas?
-4. What are the factors associated with the longevity gap? 
+4. What are the factors associated with life expectancy? 
 
 ## II. Purpose
 Addressing socioeconomic disparities in health is a major policy goal. Yet the magnitude of socioeconomic gaps in life expectancy, how these gaps are changing over time, and their determinants are not clear. In this project, newly available data covering the US population will be used to obtain more comprehensive and precise estimates of the relationship between income and life expectancy at the national level. Local area estimates of life expectancy by income will be calculated and factors that are correlated with higher life expectancy for individuals with low incomes will be identified.  
