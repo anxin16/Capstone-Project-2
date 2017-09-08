@@ -34,17 +34,57 @@ The analysis try to provide information for government agencies and  health care
 #### Life Expectancy gap by State
 #### Life Expectancy gap by Commuting Zone
 
-## V. Data Modeling
+
+
+
+## V. Data Modelingthe 
+In this step, we will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as X, average life expectancy of each county as y. 
 
 ### 1. Machine Learning Models
+
+**1) Linear Regression**
+
+**2) Support Vector Regression**
+
+**3) Random Forests**
 
 ### 2. Feature Selection Methods
 
 ### 3. Factors Affect Life Expectancy
+
+
+
+
+
 
 ## VI. Results and Discussion
 
 ## VII. Future Work
 
 # Reference
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
