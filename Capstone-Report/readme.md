@@ -125,6 +125,7 @@ Model | C | S^2 | MSE
 SVR()|1.0|0.7835|0.3054
 SVR(C=2)|2.0|0.9656|0.0486
 SVR(C=5)|5.0|0.9932|0.0096
+
 From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and smallest MSE. But this tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
 
 **Predict test dataset with the model**
