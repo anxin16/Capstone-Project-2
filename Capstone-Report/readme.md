@@ -222,7 +222,7 @@ RandomForestRegressor(n_estimators=20)|53|20|0.9607|0.0555
 RandomForestRegressor(n_estimators=100, oob_score=True)|53|100|0.9679|0.0452
 RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|53|200|0.9692|0.0434
 
-From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
+From the evaluation result, we can see that RandomForestRegressor with n_estimators=200 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset. 
 
 **Predict test dataset with the model**
 
