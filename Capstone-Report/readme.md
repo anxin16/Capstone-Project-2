@@ -126,7 +126,7 @@ SVR()|1.0|0.7835|0.3054
 SVR(C=2)|2.0|0.9656|0.0486
 SVR(C=5)|5.0|0.9932|0.0096
 
-From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and smallest MSE. But this tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
+From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
 
 **Predict test dataset with the model**
 ```python
@@ -174,8 +174,45 @@ Fit a model X_train, and calculate MSE with X_test, y_test: 1.4732298835854551
 
 #### 3) Random Forest Regressor
 ```python
-
+from sklearn.ensemble import RandomForestRegressor
+# Random Forest Regression 
+rfr = RandomForestRegressor()
+rfr.fit(X0, y)
 ```
+Here we used model with default parameters. Next we'll tune the parameters of Random Forest model.
+```python
+# max_features = 20
+rfr1 = RandomForestRegressor(max_features=20)
+rfr1.fit(X0, y)
+```
+```python
+# max_features = 10
+rfr2 = RandomForestRegressor(max_features=10)
+rfr2.fit(X0, y)
+```
+```python
+# max_features = 5
+rfr3 = RandomForestRegressor(max_features=5)
+rfr3.fit(X0, y)
+```
+```python
+# n_estimators = 20
+rfr4 = RandomForestRegressor(n_estimators=20)
+rfr4.fit(X0, y)
+```
+```python
+# n_estimators = 100
+rfr5 = RandomForestRegressor(n_estimators=100, oob_score=True)
+rfr5.fit(X0, y)
+```
+```python
+# n_estimators = 200
+rfr6 = RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)
+rfr6.fit(X0, y)
+```
+
+
+
 
 ### 2. Feature Selection Methods
 
