@@ -72,9 +72,10 @@ X0 = X.copy()
 lm = LinearRegression()
 lm.fit(X0, y)
 ```
-S^2 | MSE
---- | ---
-0.8249|0.2469
+Evaluation result of the model:
+Model | Features | S^2 | MSE
+--- | --- | --- | ---
+LinearRegression()|53|0.8249|0.2469
 
 **2) Support Vector Regression**
 ```python
