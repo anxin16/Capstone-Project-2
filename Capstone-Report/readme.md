@@ -39,9 +39,11 @@ The analysis try to provide information for government agencies and  health care
 
 ## V. Data Modelingthe 
 In this step, we will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
-```{r}
-In: X.columns.values
-Out: array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
+```python
+X.columns.values
+```
+```
+array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
        'exercise_any', 'puninsured2010', 'reimb_penroll_adj10',
        'mort_30day_hosp_z', 'adjmortmeas_amiall30day',
        'adjmortmeas_chfall30day', 'adjmortmeas_pnall30day',
@@ -63,7 +65,7 @@ Out: array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
 We use three algorithms to get the machine learning models. They are Linear Regression, Support Vector Regression, and Random Forest Regressor. For each model, we adjust the parameters, caculate Coefficient of determination R^2 of the prediction and Mean squared error (MSE) to get the best model.
 
 **1) Linear Regression**
-```{r}
+```python
 from sklearn.linear_model import LinearRegression
 X0 = X.copy()
 # Creates a LinearRegression object
@@ -73,11 +75,11 @@ lm.fit(X0, y)
 
 
 **2) Support Vector Regression**
-```{r}
+```python
 ```
 
 **3) Random Forest Regressor**
-```{r}
+```python
 ```
 
 ### 2. Feature Selection Methods
