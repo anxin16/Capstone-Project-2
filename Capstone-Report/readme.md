@@ -283,13 +283,10 @@ From the evaluation result, we can see that PCA method affect the quality of the
 
 Model | MSE with training dataset | MSE with test dataset
 --- | --- | ---
-RandomForestRegressor()|0.0633|0.4030
-RandomForestRegressor(max_features=20)|0.07655|0.3929
-RandomForestRegressor(max_features=10)|0.0823|0.4107
-RandomForestRegressor(max_features=5)|0.0736|0.4419
-RandomForestRegressor(n_estimators=20)|0.0612|0.3746
-RandomForestRegressor(n_estimators=100, oob_score=True)|0.0459|0.3526
-RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|0.0441|0.3623
+PCA(n_components='mle', svd_solver='full')|0.2399|0.2955
+PCA(n_components=20)|0.3230|0.3850
+PCA(n_components=10)|0.4314|0.4424
+PCA(n_components=5)|0.6392|0.6044
 
 *Comparing MSE of the predict results on test dataset, we found that Random Forest Regressor models had relatively same predicting MSE with different parameters. RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is the best.*
 
