@@ -240,7 +240,7 @@ RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|0.0441|
 *Comparing MSE of the predict results on test dataset, we found that Random Forest Regressor models had relatively same predicting MSE with different parameters. RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is the best.*
 
 ### 2. Feature Selection Methods
-feature selection is the process of selecting a subset of relevant features for use in model construction. Feature selection techniques are used for four reasons:
+Feature selection is the process of selecting a subset of relevant features for use in model construction. Feature selection techniques are used for four reasons:
 * simplification of models to make them easier to interpret by users,
 * shorter training times,
 * to avoid the curse of dimensionality,
@@ -249,6 +249,11 @@ feature selection is the process of selecting a subset of relevant features for 
 In this project, X has 53 features all together. We use feature selection methods to reduce X's dimention while try to get as good models. 
 
 #### 1) Principal Component Analysis
+Principal component analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It's often used to make data easy to explore and visualize. The number of principal components is less than or equal to the smaller of the number of original variables or the number of observations. 
+
+In this project, we tried PCA in Linear Regression and Support Vector Regression, but we didn't see difference with SVR model, so we only discuss PCA in Linear Regression model here.
+
+
 
 #### 2) Regularization
 
