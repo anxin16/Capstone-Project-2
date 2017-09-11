@@ -92,7 +92,7 @@ pred_test = lm.predict(X_test)
 print("Fit a model X_train, and calculate MSE with y_train:", np.mean((y_train - pred_train) ** 2))
 print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_test - pred_test) ** 2))
 ```
-Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785
+Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785  
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
 #### 2) Support Vector Regression
