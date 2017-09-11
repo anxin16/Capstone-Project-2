@@ -37,7 +37,7 @@ The analysis try to provide information for government agencies and  health care
 
 
 
-## V. Data Modelingthe 
+## V. Data Modeling
 In this step, we will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
 ```python
 X.columns.values
@@ -78,7 +78,7 @@ Model | Features | S^2 | MSE
 --- | --- | --- | ---
 LinearRegression()|53|0.8249|0.2469
 
-**Predice test dataset with the model**
+**Predict test dataset with the model**
 ```python
 from sklearn.model_selection import train_test_split
 # Split dataset
@@ -95,7 +95,7 @@ print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_
 Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785  
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
-*So this is a relatively good model. The only shortcoming of this model is that it uses all the features, X has high dementions, we'll try to reduce demention with feature selection later.*
+*So this is a relatively good model. The only shortcoming of this model is that it uses all the features, so X has high demention. We'll try to reduce demention with feature selection later.*
 
 #### 2) Support Vector Regression
 ```python
@@ -124,10 +124,56 @@ Model | C | S^2 | MSE
 --- | --- | --- | ---
 SVR()|1.0|0.7835|0.3054
 SVR(C=2)|2.0|0.9656|0.0486
-SVR(C=2)|5.0|0.9932|0.0096
+SVR(C=5)|5.0|0.9932|0.0096
+From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and smallest MSE. But this tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
+
+**Predict test dataset with the model**
+```python
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X0, y, test_size=0.2, random_state = 5)
+# Build a support vector regression model using training data sets
+svr = SVR()
+svr.fit(X_train, y_train)
+pred_train = svr.predict(X_train)
+pred_test = svr.predict(X_test)
+# Calculate the mean squared error
+print("Fit a model X_train, and calculate MSE with y_train:", np.mean((y_train - pred_train) ** 2))
+print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_test - pred_test) ** 2))
+```
+Fit a model X_train, and calculate MSE with y_train: 0.3056692394741886  
+Fit a model X_train, and calculate MSE with X_test, y_test: 1.4713715795892517
+
+```python
+# Build a support vector regression model using training data sets
+svr3 = SVR(C=2)
+svr3.fit(X_train, y_train)
+pred_train3 = svr3.predict(X_train)
+pred_test3 = svr3.predict(X_test)
+# Calculate the mean squared error
+print("Fit a model X_train, and calculate MSE with y_train:", np.mean((y_train - pred_train3) ** 2))
+print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_test - pred_test3) ** 2))
+```
+Fit a model X_train, and calculate MSE with y_train: 0.049667362297045686  
+Fit a model X_train, and calculate MSE with X_test, y_test: 1.472355197361246
+
+```python
+# Build a support vector regression model using training data sets
+svr4 = SVR(C=5)
+svr4.fit(X_train, y_train)
+pred_train4 = svr4.predict(X_train)
+pred_test4 = svr4.predict(X_test)
+# Calculate the mean squared error
+print("Fit a model X_train, and calculate MSE with y_train:", np.mean((y_train - pred_train4) ** 2))
+print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_test - pred_test4) ** 2))
+```
+Fit a model X_train, and calculate MSE with y_train: 0.009595667888111285  
+Fit a model X_train, and calculate MSE with X_test, y_test: 1.4732298835854551
+
+*Comparing MSE of the predict results on test dataset, we found that SVR models had relatively same predicting MSE with different Penalty parameter C of the error term. SVR(C=5) has the lowest training MSE but the highest test MSE. So high C only lead to overfitting, it didn't improve the test result.*
 
 #### 3) Random Forest Regressor
 ```python
+
 ```
 
 ### 2. Feature Selection Methods
