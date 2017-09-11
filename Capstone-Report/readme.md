@@ -223,11 +223,11 @@ RandomForestRegressor(n_estimators=20)|53|20|0.9607|0.0555
 RandomForestRegressor(n_estimators=100, oob_score=True)|53|100|0.9679|0.0452
 RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|53|200|0.9692|0.0434
 
-From the evaluation result, we can see that RandomForestRegressor with n_estimators=200 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset. 
+From the evaluation result, we can see that RandomForestRegressor is very good model. Among them RandomForestRegressor with n_estimators=200 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset. 
 
 **Predict test dataset with the model**
 
-Model | MSE with y_train | MSE with y_test
+Model | MSE with training dataset | MSE with test dataset
 --- | --- | ---
 RandomForestRegressor()|0.0633|0.4030
 RandomForestRegressor(max_features=20)|0.07655|0.3929
@@ -237,8 +237,16 @@ RandomForestRegressor(n_estimators=20)|0.0612|0.3746
 RandomForestRegressor(n_estimators=100, oob_score=True)|0.0459|0.3526
 RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|0.0441|0.3623
 
+*Comparing MSE of the predict results on test dataset, we found that Random Forest Regressor models had relatively same predicting MSE with different parameters. RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is the best.*
 
 ### 2. Feature Selection Methods
+feature selection is the process of selecting a subset of relevant features for use in model construction. Feature selection techniques are used for four reasons:
+* simplification of models to make them easier to interpret by users,
+* shorter training times,
+* to avoid the curse of dimensionality,
+* enhanced generalization by reducing overfitting
+
+In this project, X has 53 features all together. We use feature selection methods to reduce X's dimention while try to get as good models. 
 
 #### 1) Principal Component Analysis
 
