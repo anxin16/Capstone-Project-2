@@ -252,7 +252,46 @@ In this project, X has 53 features all together. We use feature selection method
 Principal component analysis (PCA) is a technique used to emphasize variation and bring out strong patterns in a dataset. It's often used to make data easy to explore and visualize. The number of principal components is less than or equal to the smaller of the number of original variables or the number of observations. 
 
 In this project, we tried PCA in Linear Regression and Support Vector Regression, but we didn't see difference with SVR model, so we only discuss PCA in Linear Regression model here.
+```python
+from sklearn.decomposition import PCA
+# Use Minka’s MLE to guess the dimension
+# feature extraction
+pca = PCA(n_components='mle', svd_solver='full')
+X1 = pca.fit_transform(X) 
+# summarize components
+print('Number of Components:', pca.n_components_)
+```
+Number of Components: 52
+```python
+lm1 = LinearRegression()
+lm1.fit(X1, y)
+```
+Here we use Minka’s MLE to guess the dimension and get 52 features out of all 53 features. This means that most of the features are relevant with life expectancy. Next we'll adjust the number of components in PCA and observe the quality of models.
 
+**Evaluation result of the model:**
+
+Model | Number of Components | S^2 | MSE
+--- | --- | --- | --- |
+PCA(n_components='mle', svd_solver='full')|52|0.8249|0.2470
+PCA(n_components=20)|20|0.7643|0.3324
+PCA(n_components=10)|10|0.6944|0.4311
+PCA(n_components=5)|5|0.5536|0.6296
+
+From the evaluation result, we can see that PCA method affect the quality of the models. PCA with different number of component can lead to different S^2 and MSE. The less the number of xomponent is, the worse the model is. So if we banlance the number of component and model score, PCA with n_components=20 is relatively good.
+
+**Predict test dataset with the model**
+
+Model | MSE with training dataset | MSE with test dataset
+--- | --- | ---
+RandomForestRegressor()|0.0633|0.4030
+RandomForestRegressor(max_features=20)|0.07655|0.3929
+RandomForestRegressor(max_features=10)|0.0823|0.4107
+RandomForestRegressor(max_features=5)|0.0736|0.4419
+RandomForestRegressor(n_estimators=20)|0.0612|0.3746
+RandomForestRegressor(n_estimators=100, oob_score=True)|0.0459|0.3526
+RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|0.0441|0.3623
+
+*Comparing MSE of the predict results on test dataset, we found that Random Forest Regressor models had relatively same predicting MSE with different parameters. RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is the best.*
 
 
 #### 2) Regularization
