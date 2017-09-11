@@ -225,7 +225,15 @@ RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|53|200|
 From the evaluation result, we can see that RandomForestRegressor with n_estimators=200 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset. 
 
 **Predict test dataset with the model**
-
+Model | MSE with y_train | MSE with y_test
+--- | --- | --- | ---
+RandomForestRegressor()|0.0633|0.4030
+RandomForestRegressor(max_features=20)|0.07655|0.3929
+RandomForestRegressor(max_features=10)|0.0823|0.4107
+RandomForestRegressor(max_features=5)|0.0736|0.4419
+RandomForestRegressor(n_estimators=20)|0.0612|0.3746
+RandomForestRegressor(n_estimators=100, oob_score=True)|0.0459|0.3526
+RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|0.0441|0.3623
 
 
 ### 2. Feature Selection Methods
