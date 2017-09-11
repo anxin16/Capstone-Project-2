@@ -41,7 +41,6 @@ The analysis try to provide information for government agencies and  health care
 In this step, we will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
 ```{r}
 X.columns.values
-```
 array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
        'exercise_any', 'puninsured2010', 'reimb_penroll_adj10',
        'mort_30day_hosp_z', 'adjmortmeas_amiall30day',
@@ -58,7 +57,7 @@ array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
        'ccd_exp_tot', 'ccd_pup_tch_ratio', 'score_r', 'dropout_r',
        'cs_educ_ba', 'e_rank_b', 'cs_fam_wkidsinglemom', 'crime_total',
        'subcty_exp_pc', 'taxrate', 'tax_st_diff_top20'], dtype=object)
-
+```
 
 ### 1. Machine Learning Models
 We use three algorithms to get the machine learning models. They are Linear Regression, Support Vector Regression, and Random Forest Regressor. For each model, we adjust the parameters, caculate Coefficient of determination R^2 of the prediction and Mean squared error (MSE) to get the best model.
