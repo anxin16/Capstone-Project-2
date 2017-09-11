@@ -95,10 +95,36 @@ print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_
 Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785  
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
+*So this is a relatively good model. The only shortcoming of this model is that it uses all the features, X has high dementions, we'll try to reduce demention with feature selection later.*
+
 #### 2) Support Vector Regression
 ```python
-
+from sklearn.svm import SVR
+X0 = X.copy()
+# Support Vector Regression 
+svr = SVR()
+svr.fit(X0, y)
 ```
+Here default kernel='rbf', we tried to use kernel=‘linear’ and kernel='poly', but after a long training time we didn't get any result, so we gave up.
+
+We tried to adjust Penalty parameter C of the error term.
+```python
+# RBF model with C=2
+svr1 = SVR(C=2)
+svr1.fit(X0, y)
+```
+```python
+# RBF model with C=5
+svr2 = SVR(C=5)
+svr2.fit(X0, y)
+```
+**Evaluation result of the model:**
+
+Model | C | S^2 | MSE
+--- | --- | --- | ---
+SVR()|1.0|0.7835|0.3054
+SVR(C=2)|2.0|0.9656|0.0486
+SVR(C=2)|5.0|0.9932|0.0096
 
 #### 3) Random Forest Regressor
 ```python
