@@ -76,7 +76,7 @@ lm.fit(X0, y)
 
 Model | Features | S^2 | MSE
 --- | --- | --- | ---
-LinearRegression()|53|0.8249|0.2469
+LinearRegression()| 53 |0.8249|0.2469
 
 **Predict test dataset with the model**
 ```python
@@ -179,7 +179,7 @@ from sklearn.ensemble import RandomForestRegressor
 rfr = RandomForestRegressor()
 rfr.fit(X0, y)
 ```
-Here we used model with default parameters. Next we'll tune the parameters of Random Forest model.
+Here we use model with default parameters. Next we'll tune the parameters of Random Forest model. One is max_features, the number of features to consider when looking for the best split. The other is n_estimators, the number of trees in the forest.
 ```python
 # max_features = 20
 rfr1 = RandomForestRegressor(max_features=20)
@@ -210,7 +210,21 @@ rfr5.fit(X0, y)
 rfr6 = RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)
 rfr6.fit(X0, y)
 ```
+**Evaluation result of the model:**
 
+Model | max_features | n_estimators | S^2 | MSE
+--- | --- | --- | --- | --- |
+RandomForestRegressor()|53|10|0.9535|0.0656
+RandomForestRegressor(max_features=20)|20|10|0.9506|0.0697
+RandomForestRegressor(max_features=10)|10|10|0.9526|0.0668
+RandomForestRegressor(max_features=5)|5|10|0.9497|0.0710
+RandomForestRegressor(n_estimators=20)|53|20|0.9607|0.0555
+RandomForestRegressor(n_estimators=100, oob_score=True)|53|100|0.9679|0.0452
+RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|53|200|0.9692|0.0434
+
+From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
+
+**Predict test dataset with the model**
 
 
 
