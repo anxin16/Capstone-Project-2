@@ -64,7 +64,7 @@ array(['cty_pop2000', 'intersects_msa', 'cur_smoke', 'bmi_obese',
 ### 1. Machine Learning Models
 We use three algorithms to get the machine learning models. They are Linear Regression, Support Vector Regression, and Random Forest Regressor. For each model, we adjust the parameters, caculate Coefficient of determination R^2 of the prediction and Mean squared error (MSE) to get the best model.
 
-**1) Linear Regression**
+#### 1) Linear Regression
 ```python
 from sklearn.linear_model import LinearRegression
 X0 = X.copy()
@@ -72,27 +72,45 @@ X0 = X.copy()
 lm = LinearRegression()
 lm.fit(X0, y)
 ```
-Evaluation result of the model:
+**Evaluation result of the model:**
 
 Model | Features | S^2 | MSE
 --- | --- | --- | ---
 LinearRegression()|53|0.8249|0.2469
 
-**2) Support Vector Regression**
+**Predice test dataset with the model**
 ```python
+from sklearn.model_selection import train_test_split
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(X0, y, test_size=0.2, random_state = 5)
+# Build a linear regression model using training data sets
+lm = LinearRegression()
+lm.fit(X_train, y_train)
+pred_train = lm.predict(X_train)
+pred_test = lm.predict(X_test)
+# Calculate the mean squared error
+print("Fit a model X_train, and calculate MSE with y_train:", np.mean((y_train - pred_train) ** 2))
+print("Fit a model X_train, and calculate MSE with X_test, y_test:", np.mean((y_test - pred_test) ** 2))
+```
+Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785
+Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
+
+#### 2) Support Vector Regression
+```python
+
 ```
 
-**3) Random Forest Regressor**
+#### 3) Random Forest Regressor
 ```python
 ```
 
 ### 2. Feature Selection Methods
 
-**1) Principal Component Analysis**
+#### 1) Principal Component Analysis
 
-**2) Regularization**
+#### 2) Regularization
 
-**3) Random Forests**
+#### 3) Random Forests
 
 ### 3. Factors Affect Life Expectancy
 
