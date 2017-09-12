@@ -172,7 +172,7 @@ We can see that Men’s life expectancy gaps are higher than that of the women a
 
 5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:    
 ![gap-cz-m-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h-4.png) ![gap-cz-f-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h-4.png)   
-And 5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:   
+And 5 CZs with the lowest life expectancy gap in California, and New York:   
 ![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
 So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
 
