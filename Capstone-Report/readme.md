@@ -334,7 +334,7 @@ rfr6.fit(X0, y)
 fi6 = pd.DataFrame(list(zip(X0.columns, rfr6.feature_importances_)), columns = ['features', 'Importance'])
 fi6.sort_values(by='Importance', ascending=False).head(10)
 ```
-The 10 most important models are as below:
+The 10 most important models are as below:  
 ![rfr6_Importance](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/rfr6_Importance.png) 
 
 features | Feature Description | Importance
