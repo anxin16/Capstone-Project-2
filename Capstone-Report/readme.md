@@ -365,7 +365,7 @@ Number of non-zero coefficients: 35
 ![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png)   
 (This picture is truncated because it's too long for screenshot.)
 
-From result of Lasso model, we get the 10 most important features to affect life expectancy:
+From result of Lasso model, we get the 10 most important features that affect life expectancy:
 
 No. | features | Feature Description | Coefficients
 --- | --- | --- | ---
@@ -381,7 +381,7 @@ No. | features | Feature Description | Coefficients
 10|mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-0.140977
 
 #### 2) Result of Random Forests Regressor model
-From result of Random Forests Regressor model, we get the 10 most important features to affect life expectancy:
+From result of Random Forests Regressor model, we get the 10 most important features that affect life expectancy:
 
 No. | features | Feature Description | Importance
 --- | --- | --- | ---
@@ -396,8 +396,52 @@ No. | features | Feature Description | Importance
 9|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.024484
 10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
 
+#### 3) Factors affect life expectancy of the lowest quartile
+Next we do research on the factors that affect life expectancy of the lowest quartile people (Q1). The dataset include features relevant with Q1. We'll try Lasso and Random Forests Regressor.
 
+```python
+# Regularization with Lasso model
+las_Q1 = Lasso(alpha=0.001)
+las_Q1.fit(X, y)
+print('Coefficient of determination R^2 of the prediction:', las_Q1.score(X,y))
+print('Mean squared error (MSE):', np.mean((y-las_Q1.predict(X))**2))
+```
+Coefficient of determination R^2 of the prediction: 0.555170598503  
+Mean squared error (MSE): 0.6240216768129673
 
+The R^2 score of this model is not high. So we won't consider this model.
+
+```python
+# Random Forests Regressor
+rfr_Q1 = RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)
+rfr_Q1.fit(X, y)
+print('Coefficient of determination R^2 of the prediction:', rfr_Q1.score(X,y))
+print('Mean squared error (MSE):', np.mean((y-rfr_Q1.predict(X))**2))
+```
+Coefficient of determination R^2 of the prediction: 0.929690144901  
+Mean squared error (MSE): 0.0986330344350064
+
+This is a very good model. We'll use this model for feature selection.
+```python
+fi_Q1 = pd.DataFrame(list(zip(X.columns, rfr_Q1.feature_importances_)), columns = ['features', 'Importance'])
+fi_Q1.sort_values(by='Importance', ascending=False).head(10)
+```
+![f-imp-rfrQ1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-imp-rfrQ1.png) 
+
+Below are the 10 most important features that affect life expectancy:
+
+No. | features | Feature Description | Importance
+--- | --- | --- | ---
+1|median_house_value|Median House Value|0.244180
+2|med_prev_qual_z|Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures|0.131244
+3|cur_smoke|Fraction Current Smokers|0.098932
+4|cs_educ_ba|Percent College Grads|0.076523
+5|puninsured2010|Percent Uninsured|0.074873
+6|e_rank_b|Absolute Mobility (Expected Rank at p25)|0.037186
+7|reimb_penroll_adj10|Medicare $ Per Enrollee|0.035520
+8|bmi_obese|Fraction Obese|0.035098
+9|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.024484
+10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
 
 ## VI. Results and Discussion
 
