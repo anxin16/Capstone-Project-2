@@ -369,16 +369,16 @@ From result of Lasso model, we get the 10 most important features to affect life
 
 No. | features | Feature Description | Coefficients
 --- | --- | --- | ---
-1|cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824e+00
-2|cur_smoke|Fraction Current Smokers|-2.377746e+00
-3|poor_share|Poverty Rate|1.753844e+00
-4|cs_labforce|Labor Force Participation|-9.113474e-01
-5|frac_traveltime_lt15|Fraction with Commute < 15 Min|-5.866442e-01
-6|gini99|Gini Index Within Bottom 99%|4.624287e-01
-7|cs_elf_ind_man|Share Working in Manufacturing|4.059380e-01
-8|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|2.754955e-01
-9|cs_race_theil_2000|Racial Segregation|2.088089e-01
-10|mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-1.409774e-01
+1|cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824
+2|cur_smoke|Fraction Current Smokers|-2.377746
+3|poor_share|Poverty Rate|1.753844e
+4|cs_labforce|Labor Force Participation|-0.911347
+5|frac_traveltime_lt15|Fraction with Commute < 15 Min|-0.586644
+6|gini99|Gini Index Within Bottom 99%|0.4624287
+7|cs_elf_ind_man|Share Working in Manufacturing|0.405938
+8|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|0.275496
+9|cs_race_theil_2000|Racial Segregation|0.208809
+10|mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-0.140977
 
 #### 2) Result of Random Forests Regressor model
 From result of Random Forests Regressor model, we get the 10 most important features to affect life expectancy:
