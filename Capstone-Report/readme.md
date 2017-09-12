@@ -586,10 +586,14 @@ The python code of this part jobs is in file Capstone-3.ipynb
 In this project, we did some research on factors associated with differences in Life Expectancy in the United States. Main outcomes and measures of us are: Relationship between income and life expectancy; trends in life expectancy by income group; geographic variation in life expectancy levels and trends by income group; and factors associated with differences in life expectancy across areas.
 
 From the research and analysis, we get the following results:  
-..1. Higher income was associated with longer life expectancy throughout the income distribution. The gap in life expectancy between the richest 1% and poorest 1% of individuals was 14.6 years for men and 10.1 years for women.   
-..2. Inequality in life expectancy increased over time. Between 2001 and 2014, life expectancy increased by 2.34 years for men and 2.91 years for women in the top 5% of the income distribution, but by only 0.32 years for men and 0.04 years for women in the bottom 5%.   
-..3. Life expectancy for low-income individuals varied substantially across local areas. In the bottom income quartile, life expectancy differed by approximately 4.5 years between areas with the highest and lowest longevity. Changes in life expectancy between 2001 and 2014 ranged from gains of more than 4 years to losses of more than 2 years across areas.   
-..4. Geographic differences in life expectancy for individuals in the lowest income quartile were significantly correlated with health behaviors such as smoking (r = −0.69, P < .001), but were not significantly correlated with access to medical care, physical environmental factors, income inequality, or labor market conditions. Life expectancy for low-income individuals was positively correlated with the local area fraction of immigrants (r = 0.72, P < .001), fraction of college graduates (r = 0.42, P < .001), and government expenditures (r = 0.57, P < .001).  
+
+1. Higher income was associated with longer life expectancy throughout the income distribution. The gap in life expectancy between the richest 1% and poorest 1% of individuals was 14.6 years for men and 10.1 years for women.  
+
+2. Inequality in life expectancy increased over time. Between 2001 and 2014, life expectancy increased by 2.34 years for men and 2.91 years for women in the top 5% of the income distribution, but by only 0.32 years for men and 0.04 years for women in the bottom 5%.   
+
+3. Life expectancy for low-income individuals varied substantially across local areas. In the bottom income quartile, life expectancy differed by approximately 4.5 years between areas with the highest and lowest longevity. Changes in life expectancy between 2001 and 2014 ranged from gains of more than 4 years to losses of more than 2 years across areas.  
+
+4. Geographic differences in life expectancy for individuals in the lowest income quartile were significantly correlated with health behaviors such as smoking (r = −0.69, P < .001), but were not significantly correlated with access to medical care, physical environmental factors, income inequality, or labor market conditions. Life expectancy for low-income individuals was positively correlated with the local area fraction of immigrants (r = 0.72, P < .001), fraction of college graduates (r = 0.42, P < .001), and government expenditures (r = 0.57, P < .001).  
 
 ## VII. Future Work
 
