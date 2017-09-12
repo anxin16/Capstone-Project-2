@@ -277,7 +277,7 @@ PCA(n_components=20)|20|0.7643|0.3324
 PCA(n_components=10)|10|0.6944|0.4311
 PCA(n_components=5)|5|0.5536|0.6296
 
-From the evaluation result, we can see that PCA method affect the quality of the models. PCA with different number of component can lead to different S^2 and MSE. The less the number of xomponent is, the worse the model is. So if we banlance the number of component and model score, PCA with n_components=20 is relatively good.
+From the evaluation result, we can see that PCA method affect the quality of the models. PCA with different number of component can lead to different S^2 and MSE. The less the number of component is, the worse the model is. So if we banlance the number of component and model score, PCA with n_components=20 is relatively good.
 
 **Predict test dataset with the model**
 
@@ -288,10 +288,40 @@ PCA(n_components=20)|0.3230|0.3850
 PCA(n_components=10)|0.4314|0.4424
 PCA(n_components=5)|0.6392|0.6044
 
-*Comparing MSE of the predict results on test dataset, we found that Random Forest Regressor models had relatively same predicting MSE with different parameters. RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is the best.*
-
+*Comparing MSE of the predict results on test dataset, we found that PCA Linear regression models have different predicting MSE with different parameters. MSE with training dataset is close to MSE with test dataset, so there is no overfitting problem with PCA. Consider feature number and MSE, PCA with n_components=20 is relatively good.*
 
 #### 2) Regularization
+Regularization is a technique used to avoid the overfitting problem. It is a process of introducing additional information in order to prevent overfitting. Lasso is a Linear Model trained with L1 prior as regularizer. 
+
+```python
+from sklearn.linear_model import Lasso
+X0 = X.copy()
+las = Lasso()
+las.fit(X0, y)
+```
+This is the default model. We can adjust parameter alpha，constant that multiplies the L1 term, to get the best model.
+
+**Evaluation result of the model:**
+
+Model | alpha | S^2 | MSE
+--- | --- | --- | --- |
+Lasso()|1.0|0.6733|0.4608
+Lasso(alpha=0.1)|0.1|0.7632|0.3340
+Lasso(alpha=0.01)|0.01|0.7847|0.3037
+Lasso(alpha=0.001)|0.001|0.8127|0.2642
+
+From the evaluation result, we can see that alpha affect the quality of the models. The smaller alpha is, the better the model is. So Lasso with alpha=0.001 has highest score and lowest MSE.
+
+**Predict test dataset with the model**
+
+Model | MSE with training dataset | MSE with test dataset
+--- | --- | ---
+Lasso()|0.4554|0.4569
+Lasso(alpha=0.1)|0.3248|0.3764
+Lasso(alpha=0.01)|0.2971|0.3470
+Lasso(alpha=0.001)|0.2594|0.2980
+
+*From the predict results on test dataset, we found that Lasso models have different predicting MSE with different parameters. There is no overfitting problem with Lasso. MSE with training dataset is close to MSE with test dataset. Lasso with alpha=0.001 is the best model.*
 
 #### 3) Random Forests
 
