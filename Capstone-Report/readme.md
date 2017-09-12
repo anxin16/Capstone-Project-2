@@ -326,7 +326,29 @@ Lasso(alpha=0.001)|0.2594|0.2980
 #### 3) Random Forests
 Random forests are among the most popular machine learning methods thanks to their relatively good accuracy, robustness and ease of use. They are often used for feature selection. The reason is because the tree-based strategies used by random forests naturally ranks by how well they improve the purity of the node. 
 
-We can select features by compute the feature importances with Random Forests model.
+We can select features by compute the feature importances with Random Forests model. Here we check with the best Random forests model discussed before.
+```python
+# n_estimators = 200
+rfr6 = RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)
+rfr6.fit(X0, y)
+fi6 = pd.DataFrame(list(zip(X0.columns, rfr6.feature_importances_)), columns = ['features', 'Importance'])
+fi6.sort_values(by='Importance', ascending=False).head(10)
+```
+The 10 most important models are as below:
+![rfr6_Importance](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/rfr6_Importance.png) 
+
+features | Feature Description | Importance
+--- | --- | ---
+median_house_value|	0.244180
+med_prev_qual_z|	0.131244
+cur_smoke|	0.098932
+cs_educ_ba|	0.076523
+puninsured2010|	0.074873
+e_rank_b|	0.037186
+reimb_penroll_adj10|	0.035520
+3	bmi_obese	0.035098
+16	mammogram_10	0.024484
+17	amb_disch_per1000_10	0.019673
 
 
 
