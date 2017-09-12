@@ -231,6 +231,9 @@ RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50)|53|200|
 
 From the evaluation result, we can see that RandomForestRegressor is very good model. Among them RandomForestRegressor with n_estimators=200 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset. 
 
+True life expectancy compared to the predicted life expectancy of RandomForestRegressor(n_estimators=200, oob_score=True, random_state=50) is shown in the plot below:
+![le-ple-rfr6](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-rfr6.png)
+
 **Predict test dataset with the model**
 
 Model | MSE with training dataset | MSE with test dataset
