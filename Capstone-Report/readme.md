@@ -324,6 +324,11 @@ Lasso(alpha=0.001)|0.2594|0.2980
 *From the predict results on test dataset, we found that Lasso models have different predicting MSE with different parameters. There is no overfitting problem with Lasso. MSE with training dataset is close to MSE with test dataset. Lasso with alpha=0.001 is the best model.*
 
 #### 3) Random Forests
+Random forests are among the most popular machine learning methods thanks to their relatively good accuracy, robustness and ease of use. They are often used for feature selection. The reason is because the tree-based strategies used by random forests naturally ranks by how well they improve the purity of the node. 
+
+We can select features by compute the feature importances with Random Forests model.
+
+
 
 ### 3. Factors Affect Life Expectancy
 
