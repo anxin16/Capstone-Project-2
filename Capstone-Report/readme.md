@@ -360,12 +360,14 @@ lc3 = las3_coef[las3_coef['Coefficients']!=0]
 print('Number of non-zero coefficients:', len(lc3))
 lc3.reindex(lc3.Coefficients.abs().sort_values(ascending = False).index)
 ```
-Estimated intercept: 78.0900031141
-Number of non-zero coefficients: 35
+Estimated intercept: 78.0900031141  
+Number of non-zero coefficients: 35  
 ![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png) 
+
 This picture is truncated because it's too long for screenshot.
 
-From the form above, we get the 10 most important features to affect life expectancy:  
+From the form above, we get the 10 most important features to affect life expectancy:
+
 features | Feature Description | Coefficients
 --- | --- | ---
 cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824e+00
