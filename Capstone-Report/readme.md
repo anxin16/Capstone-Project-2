@@ -78,6 +78,9 @@ Model | Features | S^2 | MSE
 --- | --- | --- | ---
 LinearRegression()| 53 |0.8249|0.2469
 
+True life expectancy compared to the predicted life expectancy is shown in the plot below:
+![le-ple-lm](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-lm.png)
+
 **Predict test dataset with the model**
 ```python
 from sklearn.model_selection import train_test_split
@@ -96,9 +99,6 @@ Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
 *So this is a relatively good model. The only shortcoming of this model is that it uses all the features, so X has high demention. We'll try to reduce demention with feature selection later.*
-
-True life expectancy compared to the predicted life expectancy is shown in the plot below:
-![le-ple-lm](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-lm.png)
 
 #### 2) Support Vector Regression
 ```python
@@ -130,6 +130,9 @@ SVR(C=2)|2.0|0.9656|0.0486
 SVR(C=5)|5.0|0.9932|0.0096
 
 From the evaluation result, we can see that SVR with C=5 is the best model. It has the highest S^2 and the smallest MSE. But this is tested with training dataset. We need to use it on test dataset to make sure it's not overfitting.
+
+True life expectancy compared to the predicted life expectancy of SVR(C=5) is shown in the plot below:
+![le-ple-svr2](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-svr2.png)
 
 **Predict test dataset with the model**
 
