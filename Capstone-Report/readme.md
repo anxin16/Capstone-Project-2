@@ -312,12 +312,12 @@ This is the default model. We can adjust parameter alpha，constant that multipl
 
 **Evaluation result of the model:**
 
-Model | alpha | S^2 | MSE
---- | --- | --- | --- |
-Lasso()|1.0|0.6733|0.4608
-Lasso(alpha=0.1)|0.1|0.7632|0.3340
-Lasso(alpha=0.01)|0.01|0.7847|0.3037
-Lasso(alpha=0.001)|0.001|0.8127|0.2642
+Model | alpha |Number of non-zero coefficients| S^2 | MSE
+--- | --- | --- | --- | --- |
+Lasso()|1.0|13|0.6733|0.4608
+Lasso(alpha=0.1)|0.1|16|0.7632|0.3340
+Lasso(alpha=0.01)|0.01|26|0.7847|0.3037
+Lasso(alpha=0.001)|0.001|35|0.8127|0.2642
 
 From the evaluation result, we can see that alpha affect the quality of the models. The smaller alpha is, the better the model is. So Lasso with alpha=0.001 has highest score and lowest MSE.
 
@@ -347,6 +347,11 @@ The 10 most important features are as below:
 ![rfr6_Importance](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/rfr6_Importance.png) 
 
 ### 3. Factors Affect Life Expectancy
+We have two methods to determine the features that affect life expectancy most. One is Regularization with Lasso model, we can determine the important features with its non-zero coefficients. The other method is Random Forests Regressor model, we can decide the importance of features by its attribute feature_importances_. 
+
+#### 1) Regularization with Lasso model
+
+#### 2) Random Forests Regressor model
 
 features | Feature Description | Importance
 --- | --- | ---
