@@ -90,6 +90,29 @@ When use linear regression, we can get the  income–life expectancy gradient:
 		Men, Slope of linear regression: 0.11  
 
 ### 2. National Trends in Life Expectancy by Income in year 2001~2014
+In this step, we’ll answer the question: How are gaps in life expectancy changing over time? 
+
+We use the dataset in table 2, which include National by-year life expectancy estimates for men and women, by income percentile.
+
+First, we get the plot of Life Expectancy by Household Income Percentile of Men and Women in year 2001~2014:
+![le-in-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year.png)  
+From the plot, we can see that the life expectancy vary by year and trends are almost the same. 
+		
+Second, we choose 4 years’ data to have a close look:
+![le-in-year-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-f.png)  
+Above is the women life expectancy by household income in years 2001, 2006, 2010 and 2014. With a close look, we can see that the life expectancy increases by year.
+
+![le-in-year-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-in-year-m.png)  
+From above figure, we can see that men have the same feature, but vary less than women by years.
+
+Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:  
+![le-year-ln-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-f.png)   
+![le-year-ln-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-m.png)    
+We can see that for people with bottom 1 percentile household income, their life expectancy didn’t increase by year, while for people with top 1 percentile household income, their life expectancy did increased over years. 
+
+Below is the Gap of life expectancy’s trend by years:  
+![gap-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-year.png)   
+From the figure, we can see that men’s gap is much higher than that of the women, and the gap increased by year.
 
 ### 3. Local Area Variation in Life Expectancy gap by Income
 #### Life Expectancy gap by State
