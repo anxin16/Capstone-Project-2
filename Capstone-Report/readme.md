@@ -115,14 +115,55 @@ Below is the Gap of life expectancy’s trend by years:
 From the figure, we can see that men’s gap is much higher than that of the women, and the gap increased by year.
 
 ### 3. Local Area Variation in Life Expectancy gap by Income
+In this step, we’ll answer the question: How do the gaps vary across local areas? 
+
 #### Life Expectancy gap by State
+We use the dataset in table 3, which include State-level life expectancy estimates for men and women, by income quartile.
+
+First, let’s have a look at the state level variation of life expectancy.  
+![le-state-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-f.png)    
+The 5 states with the highest women life expectancy of bottom quartile income are: Maine, New York, Vermont, Massachusetts, and North Dakota. While the 5 states with the lowest women life expectancy of bottom quartile income are: Nevada, Oklahoma, Indiana, Hawaii and Michigan.  
+![le-f-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-h-q1.png) ![le-f-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-f-l-q1.png)     
+
+![le-state-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-m.png)    
+The 5 states with the highest men life expectancy of bottom quartile income are: California, New York, Montana, Idaho, and Vermont. While the 5 states with the lowest men life expectancy of bottom quartile income are: Indiana, Oklahoma, Nevada, Alabama and Tennessee.   
+![le-m-h-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-m-h-q1.png) ![le-m-l-q1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-m-l-q1.png)    
+
+Below are the figures of women and men life expectancy with quartile household income by states.  
+![le-state-q-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-q-f.png)    
+![le-state-q-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-state-q-m.png)    
+From above figures, we can see that life expectancy of different states vary a lot.
+
+Then, let’s check life expectancy gap by states.   
+![gap-state](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-state.png)   
+The 5 states with the highest life expectancy gap of men are: District Of Columbia, Wyoming, Indiana, Ohio and Delaware. The 5 states with the highest life expectancy gap of women are: Kansas, Iowa, Michigan, Indiana, and Oklahoma.  
+![gap-s-m-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-m-h.png) ![gap-s-f-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-f-h.png)   
+
+The 5 states with the lowest life expectancy gap of men are: California, New York, New Jersey, Hawaii, and Illinois. The 5 states with the lowest life expectancy gap of women are: California, Hawaii, New York, New Jersey, and Florida.  
+![gap-s-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-m-l.png) ![gap-s-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-s-f-l.png)   
+
 #### Life Expectancy gap by Commuting Zone
+Next, we’ll check CZ(Commuting Zone) level variation of life expectancy. This time we use the dataset in table 7, which include CZ-level life expectancy estimates for men and women, by income ventile.
 
+Following are CZs with the highest life expectancy gap:  
+![gap-cz-m-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h.png) ![gap-cz-f-h](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h.png)   
+And Czs with the lowest life expectancy gap:  
+![gap-cz-m-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l.png) ![gap-cz-f-l](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l.png)  
 
+From the results above, we choose commuting zones in California, New York, Indiana and Michigan for research. 
+![gap-cz-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-4.png)   
+We can see that Men’s life expectancy gaps are higher than that of the women and the gaps vary in different Czs.
 
+5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:    
+![gap-cz-m-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-h-4.png) ![gap-cz-f-h-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-h-4.png)   
+And 5 CZs with the highest life expectancy gap in California, New York, Indiana and Michigan:   
+![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
+So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
+
+The python code of this part jobs is in file Capstone-2.ipynb
 
 ## V. Data Modeling
-In this step, we will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
+In this step, We will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
 ```python
 X.columns.values
 ```
@@ -431,6 +472,8 @@ The 10 most important features are as below:
 ![rfr6_Importance](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/rfr6_Importance.png) 
 
 ### 3. Factors Affect Life Expectancy
+Now we’ll answer the question: What are the factors associated with differences in life expectancy?
+
 We have two methods to determine the features that affect life expectancy most. One is Regularization with Lasso model, we can determine the important features with its non-zero coefficients. The other method is Random Forests Regressor model, we can decide the importance of features by its attribute feature_importances_. Here we use the best models discussed above.
 
 #### 1) Result of Regularization with Lasso model
@@ -480,8 +523,8 @@ No. | features | Feature Description | Importance
 9|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.024484
 10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
 
-#### 3) Factors affect life expectancy of the lowest quartile
-Next we do research on the factors that affect life expectancy of the lowest house income quartile people (Q1). The dataset include features relevant with Q1. We'll try Lasso and Random Forests Regressor.
+#### 3) Factors affect life expectancy of the lowest income quartile
+Next we do research on the factors that affect life expectancy of the lowest income quartile people (Q1). The dataset include features relevant with Q1. We'll try Lasso and Random Forests Regressor.
 
 ```python
 # Regularization with Lasso model
