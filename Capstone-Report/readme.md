@@ -397,7 +397,7 @@ No. | features | Feature Description | Importance
 10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
 
 #### 3) Factors affect life expectancy of the lowest quartile
-Next we do research on the factors that affect life expectancy of the lowest quartile people (Q1). The dataset include features relevant with Q1. We'll try Lasso and Random Forests Regressor.
+Next we do research on the factors that affect life expectancy of the lowest house income quartile people (Q1). The dataset include features relevant with Q1. We'll try Lasso and Random Forests Regressor.
 
 ```python
 # Regularization with Lasso model
@@ -428,7 +428,7 @@ fi_Q1.sort_values(by='Importance', ascending=False).head(10)
 ```
 ![f-imp-rfrQ1](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-imp-rfrQ1.png) 
 
-Below are the 10 most important features that affect life expectancy:
+Below are the 10 most important features that affect life expectancy of the lowest household income quartile people:
 
 No. | features | Feature Description | Importance
 --- | --- | --- | ---
@@ -442,6 +442,8 @@ No. | features | Feature Description | Importance
 8|adjmortmeas_pnall30day|30-day Mortality for Pneumonia|0.023432
 9|frac_middleclass|Fraction Middle Class (p25-p75)|0.020439
 10|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|0.018807
+
+From the research result, we can see that features affect the lowest income people are not totally same with that of all people. Several features like Percent Black, Fraction Middle Class (p25-p75), Percent Change in Labor Force 1980-2000 are more important for lowest income people.
 
 ## VI. Results and Discussion
 
