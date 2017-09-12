@@ -108,15 +108,15 @@ From above figure, we can see that men have the same feature, but vary less than
 Third, let’s have a look at the life expectancy trend of bottom, middle and top household income percentiles in years 2001~2014:  
 ![le-year-ln-f](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-f.png)   
 
-	Women, Bottom 1%, Life expectancy change: -0.1
-	Women, Top 1%, Life expectancy change: 2.7
+		Women, Bottom 1%, Life expectancy change: -0.1
+		Women, Top 1%, Life expectancy change: 2.7
 	
 ![le-year-ln-m](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-year-in-m.png)    
 
-	Men, Bottom 1%, Life expectancy change: -0.1
-	Men, Top 1%, Life expectancy change: 2.4
+		Men, Bottom 1%, Life expectancy change: -0.1
+		Men, Top 1%, Life expectancy change: 2.4
 		
-We can see that for people with bottom 1 percentile household income, their life expectancy didn’t increase by year, while for people with top 1 percentile household income, their life expectancy did increased over years. 
+We can see that for people with bottom 1% income, their life expectancy didn’t increase by year, while for people with top 1%  income, their life expectancy did increased over years. 
 
 Below is the Gap of life expectancy’s trend by years:  
 ![gap-year](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-year.png)   
@@ -599,9 +599,9 @@ From the research and analysis, we get the following results:
 
 2. Life expectancy of women is higher than life expectancy of men in the same income percentile. Gender gap of life expectancy decreased with higher income percentile. It's 6.0 for the poorest 1% and 1.5 for the richest 1% of individuals.
 
-3. Inequality in life expectancy increased over time. Between 2001 and 2014, life expectancy increased by 2.34 years for men and 2.91 years for women in the top 5% of the income distribution, but by only 0.32 years for men and 0.04 years for women in the bottom 5%.   
+3. Inequality in life expectancy increased over time. Between 2001 and 2014, life expectancy increased by 2.4 years for men and 2.7 years for women in the top 1% of the income distribution, but decreased by 0.1 years for men and women in the bottom 1%.   
 
-3. Life expectancy for low-income individuals varied substantially across local areas. In the bottom income quartile, life expectancy differed by approximately 4.5 years between areas with the highest and lowest longevity. Changes in life expectancy between 2001 and 2014 ranged from gains of more than 4 years to losses of more than 2 years across areas.  
+4. Life expectancy for low-income individuals varied substantially across local areas. In the bottom income quartile, life expectancy differed by approximately 4.5 years between areas with the highest and lowest longevity. Changes in life expectancy between 2001 and 2014 ranged from gains of more than 4 years to losses of more than 2 years across areas.  
 
 4. Geographic differences in life expectancy for individuals in the lowest income quartile were significantly correlated with health behaviors such as smoking (r = −0.69, P < .001), but were not significantly correlated with access to medical care, physical environmental factors, income inequality, or labor market conditions. Life expectancy for low-income individuals was positively correlated with the local area fraction of immigrants (r = 0.72, P < .001), fraction of college graduates (r = 0.42, P < .001), and government expenditures (r = 0.57, P < .001).  
 
