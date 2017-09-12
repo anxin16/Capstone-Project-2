@@ -349,7 +349,7 @@ The 10 most important features are as below:
 ### 3. Factors Affect Life Expectancy
 We have two methods to determine the features that affect life expectancy most. One is Regularization with Lasso model, we can determine the important features with its non-zero coefficients. The other method is Random Forests Regressor model, we can decide the importance of features by its attribute feature_importances_. Here we use the best models discussed above.
 
-#### 1) Regularization with Lasso model
+#### 1) Result of Regularization with Lasso model
 ```python
 # Lasso with alpha=0.001
 las3 = Lasso(alpha=0.001)
@@ -365,35 +365,36 @@ Number of non-zero coefficients: 35
 ![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png)   
 (This picture is truncated because it's too long for screenshot.)
 
-From the form above, we get the 10 most important features to affect life expectancy:
+From result of Lasso model, we get the 10 most important features to affect life expectancy:
 
-features | Feature Description | Coefficients
---- | --- | ---
-cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824e+00
-cur_smoke|Fraction Current Smokers|-2.377746e+00
-poor_share|Poverty Rate|1.753844e+00
-cs_labforce|Labor Force Participation|-9.113474e-01
-frac_traveltime_lt15|Fraction with Commute < 15 Min|-5.866442e-01
-gini99|Gini Index Within Bottom 99%|4.624287e-01
-cs_elf_ind_man|Share Working in Manufacturing|4.059380e-01
-lf_d_2000_1980|Percent Change in Labor Force 1980-2000|2.754955e-01
-cs_race_theil_2000|Racial Segregation|2.088089e-01
-mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-1.409774e-01
+No. | features | Feature Description | Coefficients
+--- | --- | --- | ---
+1|cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824e+00
+2|cur_smoke|Fraction Current Smokers|-2.377746e+00
+3|poor_share|Poverty Rate|1.753844e+00
+4|cs_labforce|Labor Force Participation|-9.113474e-01
+5|frac_traveltime_lt15|Fraction with Commute < 15 Min|-5.866442e-01
+6|gini99|Gini Index Within Bottom 99%|4.624287e-01
+7|cs_elf_ind_man|Share Working in Manufacturing|4.059380e-01
+8|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|2.754955e-01
+9|cs_race_theil_2000|Racial Segregation|2.088089e-01
+10|mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-1.409774e-01
 
-#### 2) Random Forests Regressor model
+#### 2) Result of Random Forests Regressor model
+From result of Random Forests Regressor model, we get the 10 most important features to affect life expectancy:
 
-features | Feature Description | Importance
---- | --- | ---
-median_house_value|	0.244180
-med_prev_qual_z|	0.131244
-cur_smoke|	0.098932
-cs_educ_ba|	0.076523
-puninsured2010|	0.074873
-e_rank_b|	0.037186
-reimb_penroll_adj10|	0.035520
-bmi_obese|	0.035098
-mammogram_10|	0.024484
-amb_disch_per1000_10|	0.019673
+No. | features | Feature Description | Importance
+--- | --- | --- | ---
+1|median_house_value|Median House Value|0.244180
+2|med_prev_qual_z|Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures|0.131244
+3|cur_smoke|Fraction Current Smokers|0.098932
+4|cs_educ_ba|Percent College Grads|0.076523
+5|puninsured2010|Percent Uninsured|0.074873
+6|e_rank_b|Absolute Mobility (Expected Rank at p25)|0.037186
+7|reimb_penroll_adj10|Medicare $ Per Enrollee|0.035520
+8|bmi_obese|Fraction Obese|0.035098
+9|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.024484
+10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
 
 
 
