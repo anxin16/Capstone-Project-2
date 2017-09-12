@@ -432,16 +432,16 @@ Below are the 10 most important features that affect life expectancy:
 
 No. | features | Feature Description | Importance
 --- | --- | --- | ---
-1|median_house_value|Median House Value|0.244180
-2|med_prev_qual_z|Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures|0.131244
-3|cur_smoke|Fraction Current Smokers|0.098932
-4|cs_educ_ba|Percent College Grads|0.076523
-5|puninsured2010|Percent Uninsured|0.074873
-6|e_rank_b|Absolute Mobility (Expected Rank at p25)|0.037186
-7|reimb_penroll_adj10|Medicare $ Per Enrollee|0.035520
-8|bmi_obese|Fraction Obese|0.035098
-9|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.024484
-10|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.019673
+1|median_house_value|Median House Value|0.140114
+2|reimb_penroll_adj10|Medicare $ Per Enrollee|0.088326
+3|cur_smoke_q1|Fraction Current Smokers in Q1|0.057331
+4|cs_frac_black|Percent Black|0.044545
+5|mammogram_10|Percent Female Aged 67-69 with Mammogram|0.033224
+6|amb_disch_per1000_10|Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees|0.028584
+7|med_prev_qual_z|Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures|0.024302
+8|adjmortmeas_pnall30day|30-day Mortality for Pneumonia|0.023432
+9|frac_middleclass|Fraction Middle Class (p25-p75)|0.020439
+10|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|0.018807
 
 ## VI. Results and Discussion
 
