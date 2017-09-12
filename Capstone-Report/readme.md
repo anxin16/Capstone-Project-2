@@ -96,6 +96,7 @@ Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
 *So this is a relatively good model. The only shortcoming of this model is that it uses all the features, so X has high demention. We'll try to reduce demention with feature selection later.*
+![le-ple-lm](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-lm.png)
 
 #### 2) Support Vector Regression
 ```python
@@ -334,8 +335,10 @@ rfr6.fit(X0, y)
 fi6 = pd.DataFrame(list(zip(X0.columns, rfr6.feature_importances_)), columns = ['features', 'Importance'])
 fi6.sort_values(by='Importance', ascending=False).head(10)
 ```
-The 10 most important models are as below:  
+The 10 most important features are as below:  
 ![rfr6_Importance](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/rfr6_Importance.png) 
+
+### 3. Factors Affect Life Expectancy
 
 features | Feature Description | Importance
 --- | --- | ---
@@ -346,15 +349,9 @@ cs_educ_ba|	0.076523
 puninsured2010|	0.074873
 e_rank_b|	0.037186
 reimb_penroll_adj10|	0.035520
-3	bmi_obese	0.035098
-16	mammogram_10	0.024484
-17	amb_disch_per1000_10	0.019673
-
-
-
-### 3. Factors Affect Life Expectancy
-
-
+bmi_obese|	0.035098
+mammogram_10|	0.024484
+amb_disch_per1000_10|	0.019673
 
 
 
