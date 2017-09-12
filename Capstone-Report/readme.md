@@ -362,9 +362,8 @@ lc3.reindex(lc3.Coefficients.abs().sort_values(ascending = False).index)
 ```
 Estimated intercept: 78.0900031141  
 Number of non-zero coefficients: 35  
-![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png) 
-
-This picture is truncated because it's too long for screenshot.
+![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png)   
+(This picture is truncated because it's too long for screenshot.)
 
 From the form above, we get the 10 most important features to affect life expectancy:
 
