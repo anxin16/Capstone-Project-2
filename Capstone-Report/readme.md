@@ -96,6 +96,8 @@ Fit a model X_train, and calculate MSE with y_train: 0.23989782683795785
 Fit a model X_train, and calculate MSE with X_test, y_test: 0.29637196828670975
 
 *So this is a relatively good model. The only shortcoming of this model is that it uses all the features, so X has high demention. We'll try to reduce demention with feature selection later.*
+
+True life expectancy compared to the predicted life expectancy is shown in the plot below:
 ![le-ple-lm](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/le-ple-lm.png)
 
 #### 2) Support Vector Regression
