@@ -21,7 +21,23 @@ The analysis try to provide information for government agencies and  health care
 4. What are the factors associated with differences in life expectancy?
 
 ## II. Dataset
-The dataset include 14 csv files of data tables. After loading these tables into python notebook, we can have a whole picture of the dataset. It provide life expectancy of people with different gender, household income, in  different states, commuting zones, county during year 2001 to 2014. It also provide informations about fraction current smokers, fraction obese, percent uninsured, 30-day hospital mortality rate, percent of Medicare enrollees, percent religious, percent black, unemployment rate, labor force participation, population density and so on in commuting zones and county level. All these informations are important for the research.
+The dataset include 14 csv files of data tables. 
+* Data Table 1: National life expectancy estimates (pooling 2001-14) for men and women, by income percentile 
+* Data Table 2: National by-year life expectancy estimates for men and women, by income percentile
+* Data Table 3: State-level life expectancy estimates for men and women, by income quartile
+* Data Table 4: State-level estimates of trends in life expectancy for men and women, by income quartile
+* Data Table 5: State-level by-year life expectancy estimates for men and women, by income quartile 
+* Data Table 6: CZ-level life expectancy estimates for men and women, by income quartile
+* Data Table 7: CZ-level life expectancy estimates for men and women, by income ventile
+* Data Table 8: CZ-level estimates of trends in life expectancy for men and women, by income quartile
+* Data Table 9: CZ-level by-year life expectancy estimates for men and women, by income quartile
+* Data Table 10: CZ-level characteristics described in eTable 9 
+* Data Table 11: County-level life expectancy estimates for men and women, by income quartile 
+* Data Table 12: County-level characteristics described in eTable 11 
+* Data Table 13: International estimates of mean life expectancy at age 40, by country for men and women
+* Data Table 14: Comparison of population and death counts in tax data and NCHS data 
+
+After loading these tables into python notebook, we can have a whole picture of the dataset. It provide life expectancy of people with different gender, household income, in  different states, commuting zones, county during year 2001 to 2014. It also provide informations about fraction current smokers, fraction obese, percent uninsured, 30-day hospital mortality rate, percent of Medicare enrollees, percent religious, percent black, unemployment rate, labor force participation, population density and so on in commuting zones and county level. All these informations are important for the research.
 
 The limitation of the dataset is that it doesn’t provide all the informations in each year during 2001 and 2014. So we can’t answer questions related with factors of life expectancy changing over time. 
 
