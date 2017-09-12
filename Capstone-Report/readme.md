@@ -25,6 +25,7 @@ The dataset include 14 csv files of data tables. After loading these tables into
 
 The limitation of the dataset is that it doesn’t provide all the informations in each year during 2001 and 2014. So we can’t answer questions related with factors of life expectancy changing over time. 
 
+## III. Data Wrangling
 In data wrangling step, we first remove the unadjusted and Standard Error columns in the tables, then fill missing values in table 10 and table 12. 
 
 There are 3 steps to fill missing values in table 10:   
@@ -40,8 +41,6 @@ There are 3 steps to fill missing values in table 12:
 After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv. 
 
 The python code of above jobs is in file Capstone-1.ipynb
-
-## III. Data Wrangling
 
 ## IV. Exploratory Data Analysis
 
