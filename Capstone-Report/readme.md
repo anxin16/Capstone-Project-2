@@ -501,12 +501,11 @@ print('Estimated intercept:', las3.intercept_)
 las3_coef = pd.DataFrame(list(zip(X0.columns, las3.coef_)), columns = ['features', 'Coefficients'])
 lc3 = las3_coef[las3_coef['Coefficients']!=0]
 print('Number of non-zero coefficients:', len(lc3))
-lc3.reindex(lc3.Coefficients.abs().sort_values(ascending = False).index)
+lc3.reindex(lc3.Coefficients.abs().sort_values(ascending = False).index).head(10)
 ```
 Estimated intercept: 78.0900031141  
 Number of non-zero coefficients: 35  
 ![f-coef-las3](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/f-coef-las3.png)   
-(This picture is truncated because it's too long for screenshot.)
 
 From result of Lasso model, we get the 10 most important features that affect life expectancy:
 
@@ -514,12 +513,12 @@ No. | features | Feature Description | Coefficients
 --- | --- | --- | ---
 1|cs_fam_wkidsinglemom|Fraction of Children with Single Mother|-2.531824
 2|cur_smoke|Fraction Current Smokers|-2.377746
-3|poor_share|Poverty Rate|1.753844e
+3|poor_share|Poverty Rate|1.753844
 4|cs_labforce|Labor Force Participation|-0.911347
 5|frac_traveltime_lt15|Fraction with Commute < 15 Min|-0.586644
-6|gini99|Gini Index Within Bottom 99%|0.4624287
+6|gini99|Gini Index Within Bottom 99%|0.462429
 7|cs_elf_ind_man|Share Working in Manufacturing|0.405938
-8|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|0.275496
+8|lf_d_2000_1980|Percent Change in Labor Force 1980-2000|0.275495
 9|cs_race_theil_2000|Racial Segregation|0.208809
 10|mort_30day_hosp_z|30-day Hospital Mortality Rate Index|-0.140977
 
