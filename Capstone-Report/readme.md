@@ -56,7 +56,7 @@ There are 3 steps to fill missing values in table 12:
 
 After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv. 
 
-The python code of above jobs is in file Capstone-1.ipynb
+The python code of above jobs is in file [Capstone-1.ipynb](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Capstone-1.ipynb)
 
 ## IV. Exploratory Data Analysis
 Next we will do exploratory data analysis. There are 3 steps analysis to answer the first three question:
@@ -176,7 +176,7 @@ And 5 CZs with the lowest life expectancy gap in California, and New York:
 ![gap-cz-m-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-m-l-4.png) ![gap-cz-f-l-4](https://github.com/anxin16/Capstone-Project-2/blob/master/Figures/gap-cz-f-l-4.png)   
 So Califonia and New York have lower life expectancy and Indiana has higher life expectancy.
 
-The python code of this part jobs is in file Capstone-2.ipynb
+The python code of this part jobs is in file [Capstone-2.ipynb](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Capstone-2.ipynb)
 
 ## V. Data Modeling
 In this step, We will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
@@ -591,7 +591,7 @@ Factors assosiated with differences in life expectancy for individuals in the lo
 
 From the research result, we can see that features affect the lowest income people are not totally same with that of all people. Several features like Percent Black, Fraction Middle Class (p25-p75), Percent Change in Labor Force 1980-2000 are more important for lowest income people.
 
-The python code of this part jobs is in file Capstone-3.ipynb
+The python code of this part jobs is in file [Capstone-3.ipynb](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Capstone-3.ipynb)
 
 ## VI. Results and Discussion
 In this project, we did some research on factors associated with differences in Life Expectancy in the United States. Main outcomes and measures of us are: Relationship between income and life expectancy; trends in life expectancy by income group; geographic variation in life expectancy levels and trends by income group; and factors associated with differences in life expectancy across areas.
