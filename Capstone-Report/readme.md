@@ -13,7 +13,7 @@ In this project, we use new data from 1.4 billion anonymous earnings and mortali
 
 The purpose of this project is to characterize life expectancy by income, over time, and across areas. We will use de-identified data from tax records covering the US population from 2001-2014 to characterize income-mortality gradients. We will also characterize correlates of the spatial variation and construct publicly available statistics. We will build a model to predict the life expectancy of individuals by their age, income, living area and other aspects.
 
-The analysis try to provide information for government agencies and  health care companies to improve their services and environmental factors as well as help individuals to change their behaviors to get long life expectancy.
+The analysis try to provide information for government agencies and health care companies to improve their services and environmental factors as well as help individuals to change their behaviors to get long life expectancy.
 #### In this study, I want to solve following problems:  
 1. What is the shape of the income–life expectancy gradient?
 2. How are gaps in life expectancy changing over time?
@@ -614,6 +614,10 @@ From the research and analysis, we get the following results:
 Overall, geographic differences in life expectancy for individuals in the United States were significantly correlated with income inequality, health behaviors such as smoking and obese, access to medical care, education, and health status. Life expectancy for low-income individuals was correlated with Percent Black, Fraction Middle Class, and labor market conditions as well.
 
 ## VII. Future Work
+In this project, we did research with the data in 2001~2014. But for some tables like table 10 and table 12, we have no enough data of each year. In the future, more research can be done about the trend by years.
+1. Do factors assosiated with life expectancy change by year?
+2. Collect data of 2015~2017 and do the research again.
+3. In areas with low life expectancy or high gap of life expectancy, improve the factors affect life expectancy most and check the result.
 
 # Reference
 The Association Between Income and Life Expectancy in the United States, 2001-2014
