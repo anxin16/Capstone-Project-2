@@ -179,7 +179,7 @@ So California and New York have lower life expectancy gap and Indiana has higher
 The python code of this part jobs is in file [Capstone-2.ipynb](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Capstone-2.ipynb)
 
 ## V. Data Modeling
-In this step, We will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and caculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
+In this step, We will find a model to predict average life expectancy of a county by factors associated with life expectancy. Before use machine learning algorithms to get the best model, we need to prepare dataset. We merged table 11 and 12 by County ID, got average values of life expectancy of each county, and calculated average values of Fraction Current Smokers, Fraction Obese, Fraction Exercised in Past 30 Days. We extracted 53 features related with life expectancy as *X*, average life expectancy of each county as *y*. 
 ```python
 X.columns.values
 ```
