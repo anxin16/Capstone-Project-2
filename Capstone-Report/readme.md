@@ -606,15 +606,15 @@ From the research and analysis, we get the following results:
 
 4. Life expectancy for low-income individuals varied substantially across local areas. In the bottom income quartile, California and New York have the highest life expectancy while Indiana and Oklahoma have the lowest life expectancy. The difference is about 3~4 years. 
 
-5. Factors assosiated with differences in life expectancy were: Median House Value, Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures, Fraction Current Smokers, Percent College Grads, Percent Uninsured, Absolute Mobility (Expected Rank at p25), Medicare $ Per Enrollee, Fraction Obese, Percent Female Aged 67-69 with Mammogram, Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees.
+5. Factors associated with differences in life expectancy were: Median House Value, Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures, Fraction Current Smokers, Percent College Grads, Percent Uninsured, Absolute Mobility (Expected Rank at p25), Medicare $ Per Enrollee, Fraction Obese, Percent Female Aged 67-69 with Mammogram, Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees.
 
-6. Factors assosiated with geographic differences in life expectancy for individuals in the lowest income quartile were: Median House Value, Medicare $ Per Enrollee, Fraction Current Smokers, Percent Black, Percent Female Aged 67-69 with Mammogram, Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees, Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures, 30-day Mortality for Pneumonia, Fraction Middle Class, Percent Change in Labor Force 1980-2000.
+6. Factors associated with geographic differences in life expectancy for individuals in the lowest income quartile were: Median House Value, Medicare $ Per Enrollee, Fraction Current Smokers, Percent Black, Percent Female Aged 67-69 with Mammogram, Discharges for Ambulatory Care Sensitive Conditions Among Medicare Enrollees, Mean of Z-Scores for Dartmouth Atlas Ambulatory Care Measures, 30-day Mortality for Pneumonia, Fraction Middle Class, Percent Change in Labor Force 1980-2000.
 
 Overall, geographic differences in life expectancy for individuals in the United States were significantly correlated with income inequality, health behaviors such as smoking and obese, access to medical care, education, and health status. Life expectancy for low-income individuals was correlated with Percent Black, Fraction Middle Class, and labor market conditions as well.
 
 ## VII. Future Work
 In this project, we did research with the data in 2001~2014. But for some tables like table 10 and table 12, we have no enough data of each year. In the future, more research can be done about the trend by years.
-1. Do factors assosiated with life expectancy change by year?
+1. Do factors associated with life expectancy change by year?
 2. Collect data of 2015~2017 and do the research again.
 3. In areas with low life expectancy or high gap of life expectancy, improve the factors affect life expectancy most and check the result.
 
