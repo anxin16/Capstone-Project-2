@@ -47,12 +47,12 @@ In data wrangling step, we first remove the unadjusted and Standard Error column
 There are 3 steps to fill missing values in table 10:   
 * A column is removed if there are more than 10% missing value.
 * A commuting zone is removed if all the values of a column are missing.
-* Fill missing values with the mean value of that that commuting zone.
+* Fill missing values with the mean value of that commuting zone.
 
 There are 3 steps to fill missing values in table 12:   
 * A county is removed if all the values of a column are missing.
 * A column is removed if there are more than 20% missing value.
-* Fill missing values with the mean value of that that county.
+* Fill missing values with the mean value of that county.
 
 After data wrangling, we save the tables in csv files table_1.csv ~ table_14.csv. 
 
