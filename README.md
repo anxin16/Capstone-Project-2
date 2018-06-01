@@ -22,3 +22,10 @@ Addressing socioeconomic disparities in health is a major policy goal. Yet the m
 The purpose of this project is to characterize life expectancy by income, over time, and across areas. We will use de-identified data from tax records covering the US population from 1999-2014 to characterize income-mortality gradients. We will also characterize correlates of the spatial variation and construct publicly available statistics. We will build a model to predict the life expectancy of individuals by their age, income, living area and other aspects.   
 
 The analysis try to provide information for government agencies and  health care companies to improve their services and environmental factors as well as help individuals to change their behaviors to get long life expectancy.
+
+## III. Result
+[Report](https://github.com/anxin16/Capstone-Project-2/tree/master/Capstone-Report)
+
+[Code](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Capstone-3.ipynb)
+
+[Presentation](https://github.com/anxin16/Capstone-Project-2/blob/master/Capstone-Report/Health-Wealth_slides.pdf)
